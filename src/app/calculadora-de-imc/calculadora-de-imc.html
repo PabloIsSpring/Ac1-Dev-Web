@@ -1,0 +1,13 @@
+<div class="container">
+    <h4>Calculadora de IMC</h4>
+
+    <div class="calculadora">
+        <h5>Digite seu peso em KG</h5>
+        <input [(ngModel)]="peso" type="number">
+        <h5>Digite sua altura em M</h5>
+        <input [(ngModel)]="altura" type="number">
+        <button (onclick)="calculandoIMC()">Calcular</button>
+
+        <p>{{ resultadoTexto }}</p>
+    </div>
+</div>

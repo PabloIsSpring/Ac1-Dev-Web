@@ -1,0 +1,11 @@
+<div class="row d-flex flex-column align-items-center">
+    <h2>Conversor de Celsius em Fahrenheit e Kelvin</h2>
+    <div class="container-calculadora">
+        <h4>Digite os graus em celsius</h4>
+        <input [(ngModel)]="celsius" type="number">
+        <button (click)="calculoDeTemperatura()"> Calcular</button>
+
+        <p>Temperatura em Fahrenheit: {{ fahrenheit.toFixed(0) }}</p>
+        <p>Temperatura em Kelvin: {{ kelvin.toFixed(0) }}</p>
+    </div>    
+</div>

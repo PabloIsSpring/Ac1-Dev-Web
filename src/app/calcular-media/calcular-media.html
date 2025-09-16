@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8-md d-flex flex-column align-items-center" style="margin-top: 20px;">
+            <h3>Calculador de médias para a facens</h3>
+
+            <div class="col-4"></div>
+            <h4>AC1:</h4>
+            <input [(ngModel)]="ac1" type="number" placeholder="Nota da AC1">
+            <h4>AC2:</h4>
+            <input [(ngModel)]="ac2" type="number" placeholder="Nota da AC2">
+            <h4>AF:</h4>
+            <input [(ngModel)]="af" type="number" placeholder="Nota da AF">
+            <h4>AG:</h4>
+            <input [(ngModel)]="ag" type="number" placeholder="Nota da AG">
+            <button (click)="calculadoraMedia()">Resultado</button>
+
+            <p>Media: {{ aprovad }}</p>
+        </div>
+    </div>
+</div>

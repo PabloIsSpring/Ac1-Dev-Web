@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>Calculo de Apolice de Seguro</h3>
+
+    <div class="formulario">
+        <h5>Nome:</h5>
+        <input [(ngModel)]='nome' type="text">
+        <h5>Idade:</h5>
+        <input [(ngModel)]="idade" type="number">
+        <h5>Sexo</h5>
+        <select [(ngModel)]="sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select>
+        <h5>Valor do Automovel</h5>
+        <input [(ngModel)]="valorAutomovel" type="number">
+        <button (click)="calculoDeSeguro()">Calcular</button>
+    </div>
+
+    <h6>Valor do seu apolice de seguro ficou: {{ valorSeguro }}</h6>
+</div>
